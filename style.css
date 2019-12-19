@@ -10,10 +10,11 @@ body {
   font-family: Montserrat;
 }
 
-header {
+.header {
   position: relative;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .home-menu {
@@ -59,6 +60,7 @@ header {
     position:relative;
     z-index:0;
     width: 100%;
+    top: -10%;
 }
 
 .overlay {
@@ -79,17 +81,32 @@ header {
   align-items: flex-end;
 }
 
-nav {
+.nav {
     display: flex;
 }
 
-.intro {
+.intro-cards {
   display: flex;
   justify-content: space-evenly;
   margin-top: 30px;
 }
 
+.intro-content {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
  
+.intro-item {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5em;
+  width: calc((100% -(300px + 300px) / 3));
+  background-color: rgb(226, 228, 121);
+  border-radius: 1em 1em;
+  padding: 30px;
+  box-shadow: 6px 6px 12px black;
+}
  
  
  /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
@@ -108,6 +125,7 @@ nav {
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
+    
   }
   
   /* Do an horizontal flip when you move the mouse over the flip box container */
@@ -121,6 +139,7 @@ nav {
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
+    box-shadow: 6px 6px 12px black;
   }
   
   /* Style the front side (fallback if image is missing) */
@@ -129,9 +148,10 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #FDC608;
+    background-color: rgb(226, 228, 121);
     color: black;
     border-radius: 1em 1em;
+  
   }
 
   .flip-box-front h2, .flip-box-back h2{
@@ -140,7 +160,7 @@ nav {
   
   .flip-box-front h2 sup {
     font-weight: lighter;
-    font-size: 0.7em;
+    font-size: 0.5em;
   }
 
   /* Style the back side */
