@@ -4,37 +4,93 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+}
+body {
+  font-family: Montserrat;
 }
 
 header {
-    position: relative;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catch-phrase {
+  margin-left: 30px;
+  margin-top: 200px;
+  justify-self: center;
+  color: white;
+}
+
+.title {
+  font-size: 2em;
+  font-family: Montserrat;
+  margin-right: 10px;
+}
+
+.home-menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.H2PiyR {
+  color: #FDC608;
+}
+
+.logo-edf {
+  height: 1.5em;
+  margin-left: 10px;
+  margin-right: 30px;
+}
+
+.logo-interreg {
+  height: 50px;
+  padding-right: 30px;
 }
 
 .home-video {
     position:relative;
     z-index:0;
     width: 100%;
-    bottom: 200px;
 }
 
 .overlay {
-    position:absolute;
-    top:0;
-    left:0;
-    z-index:1;
-    display: flex;
+  padding-left: 30px;
+  padding-top: 20px;
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:1;
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-left {
+  display: flex;
+  align-items: flex-end;
 }
 
 nav {
     display: flex;
 }
 
+.intro {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+
  
  
- 
- .home-video {
-    clip: rect(0px,60px,200px,0px);
- }
  
  /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
  .flip-box {
@@ -69,15 +125,45 @@ nav {
   
   /* Style the front side (fallback if image is missing) */
   .flip-box-front {
-    background-color: #bbb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FDC608;
     color: black;
     border-radius: 1em 1em;
   }
+
+  .flip-box-front h2, .flip-box-back h2{
+    font-size: 2em;
+  }
   
+  .flip-box-front h2 sup {
+    font-weight: lighter;
+    font-size: 0.7em;
+  }
+
   /* Style the back side */
   .flip-box-back {
     background-color: dodgerblue;
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     transform: rotateY(180deg);
     border-radius: 1em 1em;
+    padding-left: 10px;
+    padding-right: 10px;
   } 
+
+  @media screen and (max-width: 640px) {
+
+    header {
+      height: auto;
+    }
+
+    .home-video {
+      transform: none;
+    }
+  }
