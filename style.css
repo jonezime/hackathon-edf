@@ -157,13 +157,164 @@ nav {
     padding-right: 10px;
   } 
 
-  @media screen and (max-width: 640px) {
+.concept {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-    header {
-      height: auto;
-    }
+.concept-title {
+  width: 50%;
+}
 
-    .home-video {
-      transform: none;
-    }
-  }
+.concept-title h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.concept-video {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.concept-video-video {
+  width: fit-content;
+}
+
+.uses-title h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.articles {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.uses-title {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+article {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.article-particulier,
+.article-institution,
+.article-ingenerie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-style: solid;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.article-particulier:hover,
+.article-institution:hover,
+.article-ingenerie:hover {
+  background-color: orange;
+}
+
+.article-particulier h3,
+.article-institution h3,
+.article-ingenerie h3 {
+  margin-bottom: 35px;
+}
+
+.particulier-photo,
+.institution-photo,
+.ingenerie-photo {
+  width: 100px;
+  height: 100px;
+}
+
+.texte-email {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/*****FOOTER*****/
+
+.footer {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-image: url(ressources/pont.png);
+  background-size: cover;
+  text-align: left;
+  color: black;
+}
+
+.footerleft {
+  float: left;
+  padding-top: 15px;
+}
+
+.footerlink {
+  text-decoration: none;
+  padding: 10px;
+  color: black;
+}
+
+.footerright {
+  float: right;
+  margin-right: 50px;
+}
+
+.clear {
+    clear: both;
+}
+
+.bugfeat {
+ text-align: center;
+  font-size: 11px;
+}
+
+.linkfeat {
+  text-decoration: none;
+  color: black;
+}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 12px;
+  font-size: 30px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  color: black;
+  box-sizing: border-box;
+  margin: 10px;
+}
+/* hover effects */
+.linkfeat:hover {
+  text-decoration: underline;
+}
+
+.footerlink:hover {
+  text-decoration: underline;
+}
+
+/* responsive */
+@media only screen and (max-width: 600px) {
+  .footerfloat {
+  float: right;
+  margin-right: 0px;
+}
+}
+
+
