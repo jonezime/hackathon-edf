@@ -23,7 +23,7 @@
                         <div class="nav-div2">Sources</div>
                     </div>
                 </div>
-                <img class="logo-interreg" src="ressources/logo-interreg.png" alt="logo intereg">
+                <a href="https://www.poctefa.eu/fr/"><img class="logo-interreg" src="ressources/logo-interreg.png" alt="logo intereg"></a>
             </div>
             <div class="catch-phrase">
                 <h1>PRÉPAREZ-VOUS À L'AIR DU FUTUR</h1>
@@ -31,7 +31,7 @@
             </div>
         </div>
     </div>
-    <div class="bandeau"></div>
+    <!--<div class="bandeau"></div>-->
     <section class="intro-cards">
         <div class="flip-box">
             <div class="flip-box-inner">
@@ -59,16 +59,41 @@
     <section class="intro-content">
         <div class="intro-item">
             <p>De nos jours, le <strong>réchauffement climatique</strong> est au cœur des enjeux
-                    économiques, sociétaux et environnementaux.</p><br>
+            économiques, sociétaux et environnementaux.</p><br>
             <p>La <strong>pollution de l’air</strong> est une des conséquences de ce bouleversement
-climatique.<strong> EDF</strong>, acteur majeur en termes d’innovation dans les <strong>énergies
-renouvelables</strong>, s’investi chaque jour pour vous proposer des <strong>solutions
-environnementales durables</strong>.</p><br>
-<p>EDF se renouvèle sans cesse pour vous proposer des <strong>solutions durables et
-responsables</strong> pour votre avenir.
-De là, est né le <strong>projet H2PiyR</strong> issu du concept <strong>« l’air du futur »</strong>.</p>
+            climatique.<strong> EDF</strong>, acteur majeur en termes d’innovation dans les <strong>énergies
+            renouvelables</strong>, s’investi chaque jour pour vous proposer des <strong>solutions
+            environnementales durables</strong>.</p><br>
+            <p>EDF se renouvèle sans cesse pour vous proposer des <strong>solutions durables et
+            responsables</strong> pour votre avenir.
+            De là, est né le <strong>projet H2PiyR</strong> issu du concept <strong>« l’air du futur »</strong>.</p>
         </div>
         </div>
+    </section>
+    <h1 class="section-title"> Le concept « L’air du futur »</h1>
+    <section class="central-cards-container">
+        <article class="central-card">
+            <img src="ressources/pont.png" alt="photo">
+            <div class="central-text">
+                <p>EDF vous propose au travers de ce concept, un air plus sain pour un futur plus sain. 
+                    La création de piles hydrogène permettant de remplacer les batteries électriques. 
+                    Quels sont les atouts de cette pile ? 
+                    Plus léger qu’une batterie électrique 
+                    Tout aussi puissant qu’une voiture diesel 
+                    Plus écologique qu’une voiture électrique, essence ou diesel : zéro émission de co2
+                    Des bornes de recharges sont installées dans tout le sud de la France et tend à se développer davantage ; le temps de charge n’excède pas 3 minutes. 
+                </p>
+            </div>
+        </article>
+        <article class="central-card">
+            <div class="central-text">
+                <p>Ces piles sont composées d’hydrogènes, celui-ci crée à partir d’eau et d’électricité. Il est extrait par le processus de séparation d’oxygène et d’électricité. 
+                    Afin d’optimiser le transport, le stockage et l’efficacité de celui-ci, l’hydrogène est compressé. 
+                    En termes de ressources écologiques, lors de l’utilisation de la pile, aucun CO2 (gaz dévastateur) n’est relâché dans l’air : il ne libère que de l’oxygène. Pour le transport, Edf a imaginé un système de coridor. 
+                </p>
+            </div>
+            <img src="ressources/pont.png" alt="photo">
+        </article>
     </section>
 
     <section class="concept">
@@ -77,6 +102,7 @@ De là, est né le <strong>projet H2PiyR</strong> issu du concept <strong>« l�
         </div>
         <div class="concept-video">
             <video src="ressources/Hydrogene-edf-marine-longeanie.mp4" class="concept-video-video" muted autoplay loop></video>
+            <div class="playpause"></div>
         </div>
     </section>
     <section class="articles">
@@ -116,5 +142,14 @@ De là, est né le <strong>projet H2PiyR</strong> issu du concept <strong>« l�
         Wild Code School / Iscom - 2019 &#169; 
        </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+        $('.concept-video-video').parent().click(function () {
+    if($(this).children(".concept-video-video").get(0).paused){        $(this).children(".concept-video-video").get(0).play();   $(this).children(".playpause").fadeOut();
+        }else{       $(this).children(".concept-video-video").get(0).pause();
+    $(this).children(".playpause").fadeIn();
+        }
+    });
+    </script>
 </body>
 </html>
