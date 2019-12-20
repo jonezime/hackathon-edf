@@ -4,17 +4,37 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
+
 body {
   font-family: Montserrat;
+  background-color: rgb(233, 233, 233);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 .header {
   position: relative;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
 }
 
 .home-menu {
@@ -27,6 +47,16 @@ body {
   margin-top: 200px;
   justify-self: center;
   color: white;
+}
+
+.catch-phrase h1 {
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 6px rgb(80, 79, 79);
+}
+
+.catch-phrase p {
+  font-size: 1rem;
+  text-shadow: 2px 2px 6px rgb(80, 79, 79);
 }
 
 .title {
@@ -61,6 +91,13 @@ body {
     z-index:0;
     width: 100%;
     top: -10%;
+    filter: brightness(65%);
+}
+
+.bandeau {
+  height: 40px;
+  width: 100%;
+  background: linear-gradient(rgb(37, 37, 37), rgba(0,0,0,0));
 }
 
 .overlay {
@@ -78,23 +115,34 @@ body {
 
 .top-left {
   display: flex;
-  align-items: flex-end;
+  align-items: baseline;
 }
 
 .nav {
     display: flex;
+    font-weight: bold;
 }
+
+.nav-div {
+  margin-right: 25px;
+}
+
+.nav-div:hover,
+.nav-div2:hover {
+  color: #FDC608;
+  cursor: pointer;
+} 
 
 .intro-cards {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .intro-content {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
 }
  
 .intro-item {
@@ -102,10 +150,16 @@ body {
   flex-direction: column;
   line-height: 1.5em;
   width: calc((100% -(300px + 300px) / 3));
-  background-color: rgb(226, 228, 121);
-  border-radius: 1em 1em;
+  background-color: rgb(238, 236, 236);
+  border-radius: 5px;
   padding: 30px;
-  box-shadow: 5px 5px 10px #333333;
+  box-shadow: 0 -3px 24px 4px rgba(0, 0, 0, 0.07);
+  text-align: justify;
+  width: 75%;
+}
+
+p strong {
+  color: dodgerblue;
 }
  
  
@@ -138,7 +192,8 @@ body {
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    box-shadow: 5px 5px 10px #333333;
+    box-shadow: 0 -3px 24px 4px rgba(0, 0, 0, 0.07);
+    border-radius: 5px;
   }
   
   /* Style the front side (fallback if image is missing) */
@@ -147,21 +202,15 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(226, 228, 121);
     color: black;
-    border-radius: 1em 1em;
-  
+    background-color: rgb(238, 236, 236);
   }
 
-  .flip-box-front h2, .flip-box-back h2{
-    font-size: 2em;
+  .flip-box-front h2 {
+    font-size: 2.5rem;
+    color: dodgerblue;
   }
   
-  .flip-box-front h2 sup {
-    font-weight: lighter;
-    font-size: 0.5em;
-  }
-
   /* Style the back side */
   .flip-box-back {
     background-color: dodgerblue;
@@ -171,9 +220,9 @@ body {
     justify-content: center;
     align-items: center;
     transform: rotateY(180deg);
-    border-radius: 1em 1em;
     padding-left: 10px;
     padding-right: 10px;
+    font-size: 1.3rem;
   } 
 
 .concept {
