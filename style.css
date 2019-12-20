@@ -8,15 +8,27 @@
 
 body {
   font-family: Montserrat;
-  background-color: rgb(233, 233, 233);
+  background-color: rgb(197, 197, 195);
 }
 
 .central-card {
-  height: 300px;
+  min-height: 200px;
   width: 100%;
   display: flex;
   box-shadow: 0 -3px 24px 4px rgba(0, 0, 0, 0.07);
   margin-bottom: 20px;
+}
+
+.central-card img {
+  height: 350px;
+}
+
+.village-photo {
+  width: auto;
+}
+
+.ampoule-photo {
+  width: 525px !important;
 }
 
 .section-title {
@@ -25,6 +37,8 @@ body {
 }
 
 .central-text {
+  padding-top: 30px;
+  padding-bottom: 30px;
   padding-left: 80px;
   padding-right: 80px;
   background-color: rgb(238, 236, 236);
@@ -78,12 +92,13 @@ body {
 }
 
 .catch-phrase h1 {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   text-shadow: 2px 2px 6px rgb(80, 79, 79);
 }
 
 .catch-phrase p {
-  font-size: 1rem;
+  padding-top: 5px;
+  font-size: 1.5rem;
   text-shadow: 2px 2px 6px rgb(80, 79, 79);
 }
 
@@ -101,6 +116,12 @@ body {
 
 .H2PiyR {
   color: #FDC608;
+}
+
+.H2PiyR-2 {
+  color: rgb(185, 145, 0);
+  font-weight: lighter;
+  text-shadow: 1px 1px 2px rgb(206, 205, 205);
 }
 
 .logo-edf {
@@ -123,12 +144,6 @@ body {
     margin-bottom: 20px;
     box-shadow: 0 -3px 24px 4px rgba(0, 0, 0, 0.07);
 }
-
-/* .bandeau {
-  height: 40px;
-  width: 100%;
-  background: linear-gradient(rgb(37, 37, 37), rgba(0,0,0,0));
-} */
 
 .overlay {
   padding-left: 30px;
@@ -155,6 +170,12 @@ body {
 
 .nav-div {
   margin-right: 25px;
+  text-decoration: none;
+}
+
+.nav-div:visited,
+.nav-div:link {
+  color: black;
 }
 
 .nav-div:hover,
@@ -196,8 +217,8 @@ p strong {
 .playpause {
   background-image:url(http://png-4.findicons.com/files/icons/2315/default_icon/256/media_play_pause_resume.png);
   background-repeat:no-repeat;
-  width:50%;
-  height:50%;
+  width:15%;
+  height:15%;
   position:absolute;
   left:0%;
   right:0%;
@@ -249,12 +270,17 @@ p strong {
     justify-content: center;
     align-items: center;
     color: black;
-    background-color: rgb(238, 236, 236);
+    background-color: rgb(106, 106, 139);
   }
 
   .flip-box-front h2 {
-    font-size: 2.5rem;
-    color: dodgerblue;
+    font-size: 5rem;
+    color: rgb(238, 236, 236);
+  }
+
+  .flip-box-front p {
+    font-size: 1.5rem;
+    color: rgb(238, 236, 236);
   }
   
   /* Style the back side */
@@ -279,6 +305,8 @@ p strong {
 }
 
 .concept-title {
+  margin-top: 30px;
+  margin-bottom: 30px;
   width: 50%;
 }
 
@@ -288,14 +316,28 @@ p strong {
 }
 
 .concept-video {
-  display:table;
-  width:auto;
-  position:relative;
-  width:20%;
+  display: table;
+  position: relative;
+  width: 40%;
+  box-shadow: 0 -3px 24px 4px rgba(0, 0, 0, 0.07);
 }
 
 .concept-video-video {
-  width: fit-content;
+  width: 100%;
+}
+
+.middle-card {
+  margin-top: 15px;
+  min-height: 200px;
+  width: 100%;
+  display: flex;
+  box-shadow: 0 -3px 24px 4px rgba(0, 0, 0, 0.07);
+  margin-bottom: 20px;
+}
+
+.middle-card img {
+  height: 350px;
+  width: 525px;
 }
 
 .uses-title h1 {
@@ -328,6 +370,10 @@ article {
   border-style: solid;
   padding: 20px;
   border-radius: 10px;
+  background-color: #2a71ff;
+  color: #d1d0d0;
+  text-shadow: 2px 2px 6px rgb(80, 79, 79);
+  font-weight: lighter;
 }
 
 .article-particulier:hover,
@@ -347,14 +393,50 @@ article {
 .ingenerie-photo {
   width: 100px;
   height: 100px;
+  filter: invert(70%);
 }
 
-.texte-email {
-  margin-top: 50px;
+.particulier-photo:hover,
+.institution-photo:hover,
+.ingenerie-photo:hover {
+  filter: invert(0);
+}
+
+
+.section-form {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.form {
   margin-bottom: 50px;
   text-align: center;
-  font-size: 2rem;
-  font-weight: bold;
+}
+
+.form p {
+  font-size: 1.5rem;
+}
+
+.form-name input,
+.form-email input {
+  margin-top: 15px;
+  height: 40px;
+  width: 350px;
+}
+
+.form-submit input {
+  margin-top: 15px;
+  height: 50px;
+  width: 120px;
+  background-color: #2a71ff;
+  color: #d1d0d0;
+  text-shadow: 2px 2px 6px rgb(80, 79, 79);
+  font-size: 1rem;
+}
+
+.form-submit input:hover {
+  color: #FDC608;
 }
 
 /*****FOOTER*****/
