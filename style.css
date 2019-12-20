@@ -8,7 +8,8 @@
 
 body {
   font-family: Montserrat;
-  background-color: rgb(197, 197, 195);
+  background: linear-gradient(0.25turn, rgba(192, 124, 46, 0.376), #ceae4496, rgba(192, 124, 46, 0.376));
+  /* background-color: rgba(175, 124, 57, 0.178); */  
 }
 
 .central-card {
@@ -32,8 +33,14 @@ body {
 }
 
 .section-title {
-  margin-left: 30px;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 15px;
   margin-bottom: 30px;
+}
+
+.air-futur {
+  color: dodgerblue;
 }
 
 .central-text {
@@ -119,9 +126,9 @@ body {
 }
 
 .H2PiyR-2 {
-  color: rgb(185, 145, 0);
+  color: dodgerblue;
   font-weight: lighter;
-  text-shadow: 1px 1px 2px rgb(206, 205, 205);
+  /* text-shadow: 1px 1px 2px rgb(206, 205, 205); */
 }
 
 .logo-edf {
@@ -186,9 +193,16 @@ body {
 
 .intro-cards {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   margin-top: 50px;
   margin-bottom: 50px;
+}
+
+.section-corridor {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
 }
 
 .intro-content {
@@ -208,6 +222,7 @@ body {
   box-shadow: 0 -3px 24px 4px rgba(0, 0, 0, 0.07);
   text-align: justify;
   width: 75%;
+  font-size: 1.2rem;
 }
 
 p strong {
@@ -233,9 +248,11 @@ p strong {
  /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
  .flip-box {
     background-color: transparent;
-    width: 300px;
-    height: 200px;
+    width: 400px;
+    height: 400px;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    margin-left: 50px;
+    margin-right: 50px;
   }
   
   /* This container is needed to position the front and back side */
@@ -270,16 +287,16 @@ p strong {
     justify-content: center;
     align-items: center;
     color: black;
-    background-color: rgb(106, 106, 139);
+    background-color: rgba(255, 166, 0, 0.301);
   }
 
   .flip-box-front h2 {
-    font-size: 5rem;
+    font-size: 7rem;
     color: rgb(238, 236, 236);
   }
 
   .flip-box-front p {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     color: rgb(238, 236, 236);
   }
   
@@ -312,7 +329,7 @@ p strong {
 
 .concept-title h1 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 40px;
 }
 
 .concept-video {
@@ -341,15 +358,19 @@ p strong {
 }
 
 .uses-title h1 {
+  padding-top: 25px;
   text-align: center;
-  font-size: 2rem;
+  font-size: 40px;
 }
 
 .articles {
   margin-bottom: 25px;
+  background-color: rgb(238, 236, 236);
+  padding-bottom: 70px;
 }
 
 .uses-title {
+  color: dodgerblue;
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -362,6 +383,8 @@ article {
 .article-particulier,
 .article-institution,
 .article-ingenerie {
+  height: 525px;
+  width: 525px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -369,7 +392,7 @@ article {
   border-style: solid;
   padding: 20px;
   border-radius: 10px;
-  background-color: #2a71ff;
+  background-color: rgba(255, 166, 0, 0.493);
   color: #d1d0d0;
   text-shadow: 2px 2px 6px rgb(80, 79, 79);
   font-weight: lighter;
@@ -378,13 +401,17 @@ article {
 .article-particulier:hover,
 .article-institution:hover,
 .article-ingenerie:hover {
-  background-color: orange;
+  background-color: dodgerblue;
 }
 
 .article-particulier h3,
 .article-institution h3,
 .article-ingenerie h3 {
+  margin-top: 35px;
   margin-bottom: 35px;
+  font-size: 2rem;
+  color: black;
+  text-shadow: none;
 }
 
 .particulier-photo,
@@ -406,6 +433,7 @@ article {
   margin-top: 60px;
   margin-bottom: 30px;
   text-align: center;
+  font-size: 40px;
 }
 
 .form {
