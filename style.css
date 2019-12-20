@@ -11,6 +11,34 @@ body {
   background-color: rgb(233, 233, 233);
 }
 
+.central-card {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  box-shadow: 0 -3px 24px 4px rgba(0, 0, 0, 0.07);
+  margin-bottom: 20px;
+}
+
+.section-title {
+  margin-left: 30px;
+  margin-bottom: 15px;
+}
+
+.central-text {
+  padding-left: 80px;
+  padding-right: 80px;
+  background-color: rgb(238, 236, 236);
+  color: black;
+  font-family: Montserrat;
+  font-size: large;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 2.5em;
+  text-align: justify;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -92,13 +120,15 @@ body {
     width: 100%;
     top: -10%;
     filter: brightness(65%);
+    margin-bottom: 20px;
+    box-shadow: 0 -3px 24px 4px rgba(0, 0, 0, 0.07);
 }
 
-.bandeau {
+/* .bandeau {
   height: 40px;
   width: 100%;
   background: linear-gradient(rgb(37, 37, 37), rgba(0,0,0,0));
-}
+} */
 
 .overlay {
   padding-left: 30px;
@@ -143,16 +173,17 @@ body {
 .intro-content {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
  
 .intro-item {
   display: flex;
   flex-direction: column;
-  line-height: 1.5em;
+  line-height: 2em;
   width: calc((100% -(300px + 300px) / 3));
   background-color: rgb(238, 236, 236);
   border-radius: 5px;
-  padding: 30px;
+  padding: 80px;
   box-shadow: 0 -3px 24px 4px rgba(0, 0, 0, 0.07);
   text-align: justify;
   width: 75%;
@@ -160,6 +191,21 @@ body {
 
 p strong {
   color: dodgerblue;
+}
+
+.playpause {
+  background-image:url(http://png-4.findicons.com/files/icons/2315/default_icon/256/media_play_pause_resume.png);
+  background-repeat:no-repeat;
+  width:50%;
+  height:50%;
+  position:absolute;
+  left:0%;
+  right:0%;
+  top:0%;
+  bottom:0%;
+  margin:auto;
+  background-size:contain;
+  background-position: center;
 }
  
  
@@ -242,11 +288,10 @@ p strong {
 }
 
 .concept-video {
-  width: 20%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  display:table;
+  width:auto;
+  position:relative;
+  width:20%;
 }
 
 .concept-video-video {
