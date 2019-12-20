@@ -118,15 +118,15 @@
         <article>
             <div class="article-particulier">
                 <h3>Particuliers</h3>   
-                <img src="ressources/car.svg" class="particulier-photo" alt="particulier-photo">
+                <img src="ressources/car.svg" class="particulier-photo" alt="particulier-photo" onclick="car.play()">
             </div>
             <div class="article-institution">
                 <h3>Institutions</h3>
-                <img src="ressources/bus.svg" class="institution-photo" alt="institution-photo">
+                <img src="ressources/bus.svg" class="institution-photo" alt="institution-photo" onclick="train.play()">
             </div>
             <div class="article-ingenerie">
                 <h3>Ingénierie</h3>
-                <img src="ressources/rocket.svg" class="ingenerie-photo" alt="ingenerie-photo">
+                <img src="ressources/rocket.svg" class="ingenerie-photo" alt="ingenerie-photo" onclick="rocket.play()">
             </div>
         </article>
     </section>
@@ -167,6 +167,10 @@
     $(this).children(".playpause").fadeIn();
         }
     });
+
+    var car = new Audio("ressources/sons/0257.wav" ) ;
+    var train = new Audio("ressources/sons/0277.wav" ) ;
+    var rocket = new Audio("ressources/sons/7184.mp3" ) ;
     </script>
 </body>
 </html>
